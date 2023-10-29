@@ -1,6 +1,14 @@
+import { useNavigate } from "react-router-dom"
 import { Header } from "../components/Header"
 
 export const Registro = () => {
+
+    const navigate = useNavigate()
+
+    const handleNavigateVistaUser = () => {
+        navigate('/VistaUsuario')
+    }
+
     return(
         <>
             <Header></Header>
@@ -21,7 +29,7 @@ export const Registro = () => {
                                 <input className="w-72 h-12 rounded-md border-[1px] border-solid border-[#FFFFFF] placeholder:pl-2" type="password" placeholder="Confirmar contraseña"/>
                             </div>
                             <div className="pt-8">
-                                <button className="bg-[#D4E3FC] w-72 h-12 text-2xl font-light rounded-xl">Registrarme</button>
+                                <button className="bg-[#D4E3FC] w-72 h-12 text-2xl font-light rounded-xl" onClick={handleNavigateVistaUser}>Registrarme</button>
                             </div>
                             <div className="pt-5">
                                 <p className="font-semibold text-xs text-center">Al crear mi cuenta acepto <br /> <a className="text-[#0d6EFD] text-center">Terminos y condiciones</a> del servicio salud+</p>

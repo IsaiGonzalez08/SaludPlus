@@ -1,6 +1,14 @@
+import { useNavigate } from "react-router-dom"
 import { Header } from "../components/Header"
 
 export const LoginAdmin = () => {
+
+    const navigate = useNavigate()
+
+    const handleNavigateAdminVista = () => {
+        navigate('/VistaAdmin')
+    }
+
     return(
         <>
             <Header></Header>
@@ -19,7 +27,7 @@ export const LoginAdmin = () => {
                                 <input className="w-72 h-12 rounded-md border-[1px] border-solid border-[#FFFFFF] placeholder:pl-2" type="password" placeholder="Contraseña"/>
                             </div>
                             <div className="pt-8">
-                                <button className="bg-[#D4E3FC] w-72 h-12 text-2xl font-light rounded-xl">Iniciar sesión</button>
+                                <button className="bg-[#D4E3FC] w-72 h-12 text-2xl font-light rounded-xl" onClick={handleNavigateAdminVista}>Iniciar sesión</button>
                             </div>
                         </div>
                     </div>

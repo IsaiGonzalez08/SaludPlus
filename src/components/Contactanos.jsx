@@ -2,9 +2,9 @@ import logoClinica from '../assets/img/logo-about.png'
 
 export const Contactanos = () => {
     return(
-        <div className="w-full h-screen bg-[#D4E3FC] mt-52">
+        <div className="w-full h-screen bg-[#D4E3FC] mt-52" id='nosotros'>
             <div className="flex flex-row justify-center pt-5">
-                <img className='w-24' src={logoClinica}/>
+               <a href=""><img className='w-24' src={logoClinica}/></a> 
             </div>
             <div className="flex flex-row justify-center pt-12">
                 <h2 className='text-[#9596D2] text-2xl font-bold'>Haciendo que la experiencia del cuidado de la salud sea más que un ser humano</h2>

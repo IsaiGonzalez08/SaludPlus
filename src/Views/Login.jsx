@@ -1,6 +1,18 @@
+import { useNavigate } from "react-router-dom"
 import { Header } from "../components/Header"
 
 export const Login = () => {
+
+    const navigate = useNavigate()
+
+    const handleNavigateVistaUser = () => {
+        navigate('/VistaUsuario')
+    }
+
+    const handleNavigateRegistro = () => {
+        navigate('/Registro')
+    }
+
     return(
         <>
             <Header></Header>   
@@ -18,10 +30,10 @@ export const Login = () => {
                                 <input className="w-72 h-12 rounded-md border-[1px] border-solid border-[#FFFFFF] placeholder:pl-2" type="password" placeholder="Contraseña"/>
                             </div>
                             <div className="pt-8">
-                                <button className="bg-[#D4E3FC] w-72 h-12 text-2xl font-light rounded-xl">Iniciar sesión</button>
+                                <button className="bg-[#D4E3FC] w-72 h-12 text-2xl font-light rounded-xl" onClick={handleNavigateVistaUser}>Iniciar sesión</button>
                             </div>
                             <div className="pt-10">
-                                <p className="font-light">¿Todavía sin cuenta? <a className="text-[#0d6EFD]">Quiero Registrarme</a></p>
+                                <p className="font-light">¿Todavía sin cuenta? <a className="text-[#0d6EFD] cursor-pointer" onClick={handleNavigateRegistro}>Quiero Registrarme</a></p>
                             </div>
                         </div>
                     </div>

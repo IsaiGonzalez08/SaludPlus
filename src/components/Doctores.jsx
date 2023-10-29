@@ -10,7 +10,7 @@ import doctor8 from '../assets/img/doctor-8.png'
 
 export const Doctores = () => {
     return(
-        <div className="flex flex-col bg-backDoctors w-full h-screen pt-36">
+        <div className="flex flex-col bg-backDoctors w-full h-screen pt-36 bg-no-repeat" id='doctores'>
             <div className="flex flex-col items-center">
                 <div>
                     <h2 className="text-4xl">Conoce nuestras especialidades</h2>

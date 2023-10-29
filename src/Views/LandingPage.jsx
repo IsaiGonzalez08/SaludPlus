@@ -1,17 +1,17 @@
-/*import { Contactanos } from "../components/Contactanos"
+import { Contactanos } from "../components/Contactanos"
 import { Doctores } from "../components/Doctores"
 import { Header } from "../components/Header"
-import { Inicio } from "../components/Inicio"*/
+import { Inicio } from "../components/Inicio"
 
 
 
 export const LandingPage = () => {
     return(
         <>
-            {/*<Header></Header>
+            <Header></Header>
             <Inicio></Inicio>
             <Doctores></Doctores>
-            <Contactanos></Contactanos>*/}
+            <Contactanos></Contactanos>
         </>
     )
 }
