@@ -17,20 +17,21 @@ export const VistaUsuario = () => {
           }
     };
 
-    function getTodayDate() {
-        const today = new Date();
-        const year = today.getFullYear();
-        const month = (today.getMonth() + 1).toString().padStart(2, '0');
-        const day = today.getDate().toString().padStart(2, '0');
+    function formatDate(date) {
+        const year = date.getFullYear();
+        const month = (date.getMonth() + 1).toString().padStart(2, '0');
+        const day = date.getDate().toString().padStart(2, '0');
         return `${year}-${month}-${day}`;
-    }
-
-    function getMaxDate() {
+      }
+      
+      function getTodayDate() {
+        const todayDate = new Date();
+        return formatDate(todayDate);
+      }
+      
+      function getMaxDate() {
         const today = new Date();
-        const year = today.getFullYear();
-        const month = (today.getMonth() + 1).toString().padStart(2, '0');
-        const day = today.getDate().toString().padStart(2, '0');
-        return `${year}-${month}-${day}`;
+        return formatDate(today);
       }
 
     return (
